@@ -1,0 +1,6 @@
+myenv
+data/*.pdf
+__pycache__/
+*.pkl
+*.pt
+*.h5
