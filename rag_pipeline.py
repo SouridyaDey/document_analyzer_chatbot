@@ -1,4 +1,4 @@
-from langchain_community.document_loaders import UnstructuredPDFLoader
+from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
@@ -9,7 +9,7 @@ from operator import itemgetter
 
 # For document ingestion and text splitting
 def load_and_split():
-    loader = UnstructuredPDFLoader('data/KEIPL Handbook.pdf')
+    loader = PyMuPDFLoader('data/KEIPL Handbook.pdf')
     docs = loader.load()
     splitter = RecursiveCharacterTextSplitter(chunk_size = 1000, chunk_overlap = 200)
     return splitter.split_documents(docs)
