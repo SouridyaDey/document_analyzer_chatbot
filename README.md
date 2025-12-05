@@ -11,7 +11,7 @@ It integrates document loading, text chunking, embedding creation, and local mod
 - Uses **UnstructuredPDFLoader** for fast and accurate PDF parsing  
 - Employs **FAISS** as the vector database for efficient similarity search  
 - Powered by **Ollama** for local LLM inference  
-- Designed with modular and privacy-conscious architecture
+- Designed with modular and privacy-conscious architecture using **Streamlit**
 - Added Dockerfile for containerization
 
 ## Prerequisites and setup instructions
@@ -21,3 +21,4 @@ It integrates document loading, text chunking, embedding creation, and local mod
 - Run Ollama in a new terminal by *ollama serve*. Keep this terminal running.
 - Pull the pre-built Docker image from DockerHub. The <username>/<Dockerimagename> is souridya7/ollama_rag_chatbot
 - Run the Docker container by *docker run -it --network=host souridyadey/ollama-rag-chatbot* (For Linux)
+- Now the chatbot will be live. Upload a document of your choice to ask questions!
